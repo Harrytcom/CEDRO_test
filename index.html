@@ -8,20 +8,47 @@
     <title>CEDRO</title>
   </head>
   <body>
+        
+    <div class="menu-container">
+      <!-- сюда вставляю template -->
+    </div>
+
     <!-- section HEADER -->
-    <header class="section-outer header">
-      <div class="container">
+    <div class="section-outer">
+      <header class="header container">
         <ul class="nav justify-content-between">
           <li class="nav-item">
             <a class="nav-link px-0" href="#">
               <img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO">
             </a>
           </li>
+
+          <div class="full-size-navigation">
+            <li class="nav-item">
+              <a class="nav-link px-0" href="#">ПИГМЕНТЫ<span class="color-gold">></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0" href="#">ТОВАРЫ ДЛЯ ПМ<span class="color-gold">></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0" href="#">РЕМУВЕР</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0" href="#">АКЦИИ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-0" href="#">ОБУЧЕНИЕ</a>
+            </li>
+          </div>
+
           <div class="d-flex">
           <li class="nav-item">
-            <a class="nav-link px-0" href="#">
+            <a class="nav-link px-0 d-flex flex-row" href="#">
               <img src="/asset/images/phone_pic_header.png" alt="">
             </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link__phone-number color-gold text-decoration-none" href="tel:88005553535">8 (800) 555-35-35</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-0" href="#">
@@ -44,19 +71,19 @@
             </a>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link" href="#">
+            <a class="nav-link menu__button" href="#">
               <img src="/asset/images/menu_pic_header.png" alt="">
             </a>
           </li>
         </div>
         </ul>
-      </div>
-    </header>
+      </header>
+    </div>
 
     <!-- section NAVIGATION -->
-    <div class="section-outer">
+    <section class="section-outer">
       <div class="profile-navigation container-sm">
-        <ul class="nav profile-navigation__list">
+        <ul class="nav profile-navigation__list"> <!-- <aside>    </aside>-->
           <li class="nav-item">
             <a class="nav-link px-0" href="#"><span class="color-gold">ПРОФИЛЬ</span></a>
           </li>
@@ -68,10 +95,10 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
   <!-- section MAIN-FORM -->
-    <div class="section-outer">
+    <section class="section-outer profile-form">
       <form class="container">
         <h1 class="form-title">Профиль</h1>
         <h3 class="form-subtitle">Данные профиля</h3>
@@ -100,10 +127,10 @@
           <input type="email" class="form-control" id="Input-address" placeholder="Город, улица, дом">
         </div>
       </form>
-    </div>
+    </section>
 
     <!-- section PASSWORD-FORM -->
-    <div class="section-outer">
+    <div class="section-outer password-form">
       <form class="container">
         <h3>Изменить пароль</h3>
         <div class="mb-3">
@@ -124,8 +151,7 @@
 
     <!-- section CAROUSEL -->
     <h2 class="container"><span class="color-gold">Тренды</span> сезона</h2>
-
-    <div class="owl-carousel">
+    <!-- <div class="owl-carousel">
       <div><img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO"> </div>
       <div><img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO"> </div>
       <div><img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO"> </div>
@@ -133,10 +159,11 @@
       <div><img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO"> </div>
       <div><img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO"> </div>
       <div> <img src="/asset/images/CEDRO_logo_header.png" alt="CEDRO"></div>
-    </div>
+    </div> -->
 
     <!-- section FOOTER -->
-    <footer class="container footer">
+    <footer class="container-fluid footer">
+      <div class="footer__info container-md d-md-flex px-0"> <!-- <nav>    </nav>-->
         <div class="footer__product py-3">
           <h4>Продукция</h4>
           <ul class="flex-column footer__list">
@@ -198,23 +225,89 @@
               </li>
           </ul>
         </div>
-        <div class="footer__socials container px-0 py-5 d-flex">
+      </div>
+        <div class="footer__socials container-md px-0 py-5 d-md-flex flex-md-row justify-content-md-between">
           <div class="footer__socials-links">
-            <img src="/asset/images/vk_icon_footer.png" alt="">
-            <img src="/asset/images/fb_icon_footer.png" alt="">
-            <img src="/asset/images/instagram_icon_footer.png" alt="">
+            <img class="px-1" src="/asset/images/vk_icon_footer.png" alt="">
+            <img class="px-1" src="/asset/images/fb_icon_footer.png" alt="">
+            <img class="px-1" src="/asset/images/instagram_icon_footer.png" alt="">
           </div>
           <div class="footer-txt">© Cedro — все права защищены, 2020</div>
           <div class="footer-txt d-flex flex-row">Сделано в Cedro
             <img class="made-by align-self-center" src="/asset/images/CEDRO_logo_footer.png" alt="">
           </div>
         </div>
-          <div class="footer__disclaimer footer-txt py-5">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, 
+          <div class="footer__disclaimer footer-txt container-md py-5 px-0">Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, 
             определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации о наличии и актуальной стоимости указанных 
             на сайте услуг обращайтесь, пожалуйста, по телефонам клиник.
           </div>
-        
     </footer>
+
+    <template id="menu-template">
+      <div class="footer__info container-md d-md-flex px-0">
+        <div class="footer__product py-3">
+          <h4>Продукция</h4>
+          <ul class="flex-column footer__list">
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Пигменты</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Пигменты</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Аппараты</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Иглы</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Расходные материалы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__company py-3">
+          <h4>Компания</h4>
+          <ul class="flex-column footer__list">
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Блог</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Обучение</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Стать представителем</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="nav-link footer__list-nav-link" href="#">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contacts py-3">
+          <h4>Контакты</h4>
+          <ul class="flex-column footer__list">
+              <li class="footer__list-nav-link">
+                <img class="footer__icon" src="/asset/images/phone_pic_footer.png" alt="">
+                8 (800) 555-35-35
+              </li>
+              <li class="footer__list-nav-link">
+                <img class="footer__icon" src="/asset/images/email_pic_footer.png" alt="">
+                cedro@yandex.ru
+              </li>
+              <li class="footer__list-nav-link">
+                <img class="footer__icon" src="/asset/images/time_pic_footer.png" alt="">
+                Время работы: пн - пт с 10 до 19
+              </li>
+              <li class="footer__list-nav-link">
+                <img class="footer__icon align-self-start my-1" src="/asset/images/place_pic_footer.png" alt="">
+                г. Санкт-Петербург, <br> м. Звездная
+              </li>
+          </ul>
+        </div>
+      </div>
+    </template>
 
     <script src="/asset/js/script.js"></script>
   </body>
