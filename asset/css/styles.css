@@ -77,6 +77,17 @@ h4 {
   overflow: auto;
 }
 
+.full-size-navigation {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .full-size-navigation {
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* .menu_is-open::before {
   position: absolute;
   display: none;
