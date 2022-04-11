@@ -36,6 +36,24 @@ h4 {
   color: #d0bc7a;
 }
 
+@media (min-width: 768px) {
+  .grid-wrapper {  display: grid;
+    grid-template-columns: 0.8fr 1.9fr;
+    grid-template-rows: 1.8fr 0.8fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "section-navigation-grid section-main-form-grid"
+      "section-navigation-grid section-password-grid"
+      "section-navigation-grid section-save-button-grid";
+  }
+  
+  .section-navigation-grid { grid-area: section-navigation-grid; }
+  .section-main-form-grid { grid-area: section-main-form-grid; }
+  .section-password-grid { grid-area: section-password-grid; }
+  .section-save-button-grid { grid-area: section-save-button-grid; }
+}
+
 /* NAVIGATION */
 .nav-link {
   font-family: 'TT Norms Medium';
@@ -57,11 +75,16 @@ h4 {
     display: block;
     padding-right: 32px;
   }
+  .profile-navigation__list {
+    flex-direction: column;
+  }
 }
 
+@media (max-width: 768px) {
 .nav-item_last {
   margin-left: auto;
   margin-top: auto;
+ }
 }
 
 .menu_is-open {
